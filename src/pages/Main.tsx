@@ -71,6 +71,7 @@ const Main: React.FC = (props: any) => {
             <IonLabel>Top 10</IonLabel>
           </IonSegmentButton>
         </IonSegment>
+
         {linkData.length > 0 && linkTab === "All" && (
           <>
             <h1 className="text-xl p-6">Total ada {linkData.length} Link</h1>
@@ -93,6 +94,41 @@ const Main: React.FC = (props: any) => {
             ))}
           </>
         )}
+
+        {linkData.length > 0 && linkTab === "Top 10" && (
+          <>
+            <h1 className="text-center text-2xl font-semibold mt-8">
+              Your Top 10 Favourite
+            </h1>
+            {linkData
+              .sort((a: any, b: any) =>
+                a.total_clicked > b.total_clicked
+                  ? 1
+                  : b.total_clicked > a.total_clicked
+                  ? -1
+                  : 0
+              )
+              .slice(0, 10)
+              .map((data: any) => (
+                <IonList key={data.hash}>
+                  <Link to={`/detail/${data.hash}`}>
+                    <IonItem>
+                      <IonLabel>
+                        <h2>{moment(data.created_at).format("MMM Do")}</h2>
+                        <h1 className="pt-5">
+                          {data.title.length > 30
+                            ? data.title.substr(0, 30) + "...."
+                            : data.title}
+                        </h1>
+                        <h2 className="pt-5">pendek.in/{data.hash}</h2>
+                      </IonLabel>
+                    </IonItem>
+                  </Link>
+                </IonList>
+              ))}
+          </>
+        )}
+
         {linkData.length === 0 && (
           <>
             <h1 className="text-2xl font-medium mt-96 text-center">

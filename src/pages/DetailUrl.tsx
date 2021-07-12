@@ -130,7 +130,9 @@ const DetailUrl: React.FC = (props: any) => {
   };
 
   const copyToClipboard = () => {
-    navigator.clipboard.writeText(detail.original_link);
+    navigator.clipboard.writeText(
+      `https://pendek-in-dua.herokuapp.com/${detail.hash}`
+    );
     present({
       duration: 1500,
       buttons: [{ text: "Hide", handler: () => dismiss() }],
@@ -178,7 +180,7 @@ const DetailUrl: React.FC = (props: any) => {
                   <a target="_blank" href={detail.original_link}>
                     {detail.original_link}
                   </a>
-                  <h2>pendek.in/{detail.hash}</h2>
+                  <h2>https://pendek-in-dua.herokuapp.com/{detail.hash}</h2>
                 </>
               )}
               <IonButton
@@ -252,7 +254,7 @@ const DetailUrl: React.FC = (props: any) => {
             <QRCode
               size={348}
               className="mx-auto mt-12"
-              value={`http://localhost:8000/${detail.hash}`}
+              value={`https://pendek-in-dua.herokuapp.com/${detail.hash}`}
             ></QRCode>
           </>
         )}

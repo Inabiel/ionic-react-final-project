@@ -9,7 +9,7 @@ import {
 } from "@ionic/react";
 import { homeOutline, personOutline, starOutline } from "ionicons/icons";
 import Favourite from "../pages/Favourite";
-import Tab3 from "../pages/Tab3";
+import Profile from "../pages/Profile";
 import Main from "../pages/Main";
 import addLink from "../pages/addLink";
 import DetailUrl from "../pages/DetailUrl";
@@ -24,8 +24,8 @@ const MainTabs: React.FC = () => {
         <Route exact path="/favourite">
           <Favourite />
         </Route>
-        <Route path="/tab3">
-          <Tab3 />
+        <Route path="/profile">
+          <Profile />
         </Route>
         <Route path="/addlink" component={addLink} />
         <Route path="/detail/:hash" component={DetailUrl} />
@@ -41,7 +41,7 @@ const MainTabs: React.FC = () => {
           <IonIcon icon={starOutline} />
           <IonLabel>Favourite</IonLabel>
         </IonTabButton>
-        <IonTabButton tab="tab3" href="/tab3">
+        <IonTabButton tab="profile" href="/profile">
           <IonIcon icon={personOutline} />
           <IonLabel>Profile</IonLabel>
         </IonTabButton>

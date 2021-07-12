@@ -7,6 +7,7 @@ import {
   IonList,
   IonItem,
   IonLabel,
+  useIonViewWillEnter,
 } from "@ionic/react";
 import axios from "axios";
 import moment from "moment";
@@ -31,9 +32,9 @@ const Favourite: React.FC = (props: any) => {
     setIsDataExists(true);
   };
 
-  useEffect(() => {
+  useIonViewWillEnter(() => {
     getFavouriteDetailFromDatabase();
-  }, []);
+  });
 
   return (
     <IonPage>
