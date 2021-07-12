@@ -7,7 +7,7 @@ import { Provider } from "react-redux";
 import store from "./redux/store";
 import axios from "axios";
 
-axios.defaults.baseURL = "https://pendek-in-dua.herokuapp.com/api";
+axios.defaults.baseURL = "http://localhost:8000/api";
 
 ReactDOM.render(
   <React.StrictMode>

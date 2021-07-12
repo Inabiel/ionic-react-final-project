@@ -75,7 +75,7 @@ const Main: React.FC = (props: any) => {
         {linkData.length > 0 && linkTab === "All" && (
           <>
             <h1 className="text-xl p-6">Total ada {linkData.length} Link</h1>
-            {linkData.map((data: any) => (
+            {[...linkData].reverse().map((data: any) => (
               <IonList key={data.hash}>
                 <Link to={`/detail/${data.hash}`}>
                   <IonItem>
@@ -100,11 +100,11 @@ const Main: React.FC = (props: any) => {
             <h1 className="text-center text-2xl font-semibold mt-8">
               Your Top 10 Favourite
             </h1>
-            {linkData
+            {[...linkData]
               .sort((a: any, b: any) =>
-                a.total_clicked > b.total_clicked
+                b.total_clicked > a.total_clicked
                   ? 1
-                  : b.total_clicked > a.total_clicked
+                  : a.total_clicked > b.total_clicked
                   ? -1
                   : 0
               )

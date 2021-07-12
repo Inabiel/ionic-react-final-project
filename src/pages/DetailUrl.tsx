@@ -228,6 +228,17 @@ const DetailUrl: React.FC = (props: any) => {
             </h1>
             <form className="ion-padding">
               <IonItem>
+                <IonLabel position="stacked">Pendek.in/ </IonLabel>
+                <IonInput
+                  placeholder={detail.title}
+                  onIonChange={(e) => {
+                    const title = e.detail.value ? e.detail.value : "";
+                    setEditData({ ...editData, ...{ title } });
+                  }}
+                />
+              </IonItem>
+
+              <IonItem>
                 <IonLabel position="fixed">Pendek.in/ </IonLabel>
                 <IonInput
                   placeholder={detail.hash}
