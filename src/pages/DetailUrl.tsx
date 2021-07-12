@@ -200,7 +200,7 @@ const DetailUrl: React.FC = (props: any) => {
               </IonButton>{" "}
               <br />
               <IonButton onClick={() => copyToClipboard()} size="default">
-                Copy To Clipboard
+                Copy ke Clipboard
               </IonButton>
               <br />
               {detail.is_favourite === false && (

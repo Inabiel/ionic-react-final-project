@@ -10,8 +10,6 @@ import {
 } from "@ionic/react";
 import { IonReactRouter } from "@ionic/react-router";
 import { ellipse, square, triangle } from "ionicons/icons";
-import Tab2 from "../pages/Tab2";
-import Tab3 from "../pages/Tab3";
 import Register from "../pages/Register";
 import Login from "../pages/Login";
 import Main from "../pages/Main";
