@@ -56,7 +56,7 @@ const Register: React.FC = () => {
         <IonGrid>
           <IonRow>
             <IonCol className="text-center">
-              <h1 className="text-5xl font-extrabold text-purple-800 pt-40">
+              <h1 className="text-5xl font-extrabold text-purple-800 pt-28">
                 Daftar
               </h1>
               <img

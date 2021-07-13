@@ -97,8 +97,9 @@ const Main: React.FC = (props: any) => {
 
         {linkData.length > 0 && linkTab === "Top 10" && (
           <>
-            <h1 className="text-center text-2xl font-semibold mt-8">
-              Your Top 10 Favourite
+            <h1 className="ion-padding text-xl font-medium mt-8">
+              {linkData.length > 10 ? 10 : linkData.length} Link have the most
+              click in a month
             </h1>
             {[...linkData]
               .sort((a: any, b: any) =>
@@ -113,7 +114,7 @@ const Main: React.FC = (props: any) => {
                 <IonList key={data.hash}>
                   <Link to={`/detail/${data.hash}`}>
                     <IonItem>
-                      <IonLabel>
+                      <IonLabel slot="start">
                         <h2>{moment(data.created_at).format("MMM Do")}</h2>
                         <h1 className="pt-5">
                           {data.title.length > 30
@@ -121,6 +122,12 @@ const Main: React.FC = (props: any) => {
                             : data.title}
                         </h1>
                         <h2 className="pt-5">pendek.in/{data.hash}</h2>
+                      </IonLabel>
+                      <IonLabel slot="end" className="text-center">
+                        <span className="text-3xl font-semibold">
+                          {data.total_clicked}
+                        </span>
+                        <h1>{data.total_clicked > 1 ? "Clicks" : "Click"}</h1>
                       </IonLabel>
                     </IonItem>
                   </Link>

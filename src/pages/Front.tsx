@@ -34,7 +34,7 @@ const Front: React.FC = () => {
               </h1>
             </IonCol>
           </IonRow>
-          <IonRow className="bg-purple-700 mt-24 lg:py-28 md:py-24 py-12 bottom-0 ion-align-items-center rounded-t-3xl w-full fixed bottom-0">
+          <IonRow className="bg-purple-700 py-20 h-2/6 bottom-0 left-0 right-0 ion-align-items-center rounded-t-3xl w-full fixed bottom-0">
             <IonCol size="12" className="ion-text-center">
               <Link to="/register">
                 <IonButton
@@ -42,7 +42,7 @@ const Front: React.FC = () => {
                   color="danger"
                   className="font-extrabold text-3xl"
                 >
-                  <span className="py-20">Daftar</span>
+                  <span>Daftar</span>
                 </IonButton>
               </Link>
             </IonCol>
@@ -53,7 +53,7 @@ const Front: React.FC = () => {
                   color="danger"
                   className="font-extrabold text-3xl"
                 >
-                  <span className="py-20">Masuk</span>
+                  <span>Masuk</span>
                 </IonButton>
               </Link>
             </IonCol>

@@ -93,7 +93,7 @@ const DetailUrl: React.FC = (props: any) => {
       const getDetailUrl = await axios.put(
         `/favourite/${hash}`,
         {
-          is_favourite: 1,
+          is_favourite: detail.is_favourite ? 0 : 1,
         },
         {
           headers: {
@@ -105,7 +105,7 @@ const DetailUrl: React.FC = (props: any) => {
         present({
           duration: 1500,
           buttons: [{ text: "Hide", handler: () => dismiss() }],
-          message: "Berhasil ditambahkan ke favorit",
+          message: "Berhasil mengganti favorit",
         });
       }
     } catch (e) {
@@ -212,10 +212,24 @@ const DetailUrl: React.FC = (props: any) => {
                   </IonButton>
                 </>
               )}
+              {detail.is_favourite === true && (
+                <>
+                  <IonButton onClick={() => addToFavourite()} size="default">
+                    Unfavourite
+                  </IonButton>
+                </>
+              )}
             </IonLabel>
-            <IonLabel slot="end">
-              <h2>Total Click : {detail.total_clicked}</h2>
-              <IonButton size="default" onClick={() => openQrCode()}>
+            <IonLabel slot="end" className="text-center">
+              <span className="text-2xl font-semibold">
+                {detail.total_clicked}
+              </span>
+              <h1>Click</h1>
+              <IonButton
+                className="mt-4"
+                size="default"
+                onClick={() => openQrCode()}
+              >
                 Generate QR
               </IonButton>
             </IonLabel>

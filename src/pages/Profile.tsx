@@ -100,7 +100,7 @@ const Profile: React.FC = (props: any) => {
               lines="none"
             >
               <div className="mx-auto bg-red-700 rounded-full h-28 p-10 w-28 text-2xl font-semibold">
-                {userProfile.name.slice(0, 2)}
+                {userProfile.name.toUpperCase().slice(0, 2)}
               </div>
               <IonLabel slot="end">
                 <h1 className="font-extrabold">{userProfile.name}</h1>
