@@ -56,14 +56,14 @@ const Register: React.FC = () => {
         <IonGrid>
           <IonRow>
             <IonCol className="text-center">
-              <h1 className="text-5xl font-extrabold text-purple-800 pt-28">
+              <h1 className="text-5xl font-extrabold text-purple-800 pt-14">
                 Daftar
               </h1>
               <img
                 src="assets/register-icon.jpg"
-                width="400px"
-                height="400px"
-                className="mx-auto pt-14"
+                width="350px"
+                height="350px"
+                className="mx-auto"
                 alt=""
               />
             </IonCol>

@@ -167,7 +167,7 @@ const DetailUrl: React.FC = (props: any) => {
       <IonContent fullscreen>
         <IonList>
           <IonItem lines="full">
-            <IonLabel slot="start">
+            <IonLabel>
               {isDataExists && (
                 <>
                   <h2>{moment(detail.created_at).format("MMM Do ")}</h2>

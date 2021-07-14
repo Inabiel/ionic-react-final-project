@@ -30,13 +30,13 @@ const Login: React.FC = (props: any) => {
         <IonGrid>
           <IonRow>
             <IonCol className="text-center">
-              <h1 className="text-5xl font-extrabold text-purple-800 pt-40">
+              <h1 className="text-5xl font-extrabold text-purple-800 pt-14">
                 Masuk
               </h1>
               <img
                 src="assets/Mobile-login.jpg"
-                width="400px"
-                height="400px"
+                width="350px"
+                height="350px"
                 className="mx-auto pt-14"
                 alt=""
               />

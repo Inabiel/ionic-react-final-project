@@ -24,12 +24,12 @@ const Front: React.FC = () => {
             <IonCol className="text-center">
               <img
                 src="assets/front-icon.jpg"
-                width="400px"
-                height="400px"
+                width="350px"
+                height="350px"
                 className="mx-auto pt-24"
                 alt=""
               />
-              <h1 className="text-6xl font-extrabold text-purple-800 pt-10">
+              <h1 className="text-5xl font-extrabold text-purple-800 pt-10">
                 Pendek.in
               </h1>
             </IonCol>
@@ -40,7 +40,7 @@ const Front: React.FC = () => {
                 <IonButton
                   size="large"
                   color="danger"
-                  className="font-extrabold text-3xl"
+                  className="font-extrabold text-2xl"
                 >
                   <span>Daftar</span>
                 </IonButton>
@@ -51,7 +51,7 @@ const Front: React.FC = () => {
                 <IonButton
                   size="large"
                   color="danger"
-                  className="font-extrabold text-3xl"
+                  className="font-extrabold text-2xl"
                 >
                   <span>Masuk</span>
                 </IonButton>
