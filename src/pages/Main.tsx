@@ -81,11 +81,11 @@ const Main: React.FC = (props: any) => {
                   <IonItem>
                     <IonLabel>
                       <h2>{moment(data.created_at).format("MMM Do")}</h2>
-                      <h1 className="pt-5">
+                      <h2 className="pt-5">
                         {data.title.length > 30
                           ? data.title.substr(0, 30) + "...."
                           : data.title}
-                      </h1>
+                      </h2>
                       <h2 className="pt-5">pendek.in/{data.hash}</h2>
                     </IonLabel>
                   </IonItem>
