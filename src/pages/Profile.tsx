@@ -113,7 +113,7 @@ const Profile: React.FC = (props: any) => {
                 <IonInput
                   placeholder={userProfile.name}
                   onIonChange={(e) => {
-                    const name = e.detail.value ? e.detail.value : "";
+                    const name = e.detail.value!;
                     setUserEdit({ ...userEdit, ...{ name } });
                   }}
                 />
@@ -123,7 +123,7 @@ const Profile: React.FC = (props: any) => {
                 <IonInput
                   placeholder={userProfile.email}
                   onIonChange={(e) => {
-                    const email = e.detail.value ? e.detail.value : "";
+                    const email = e.detail.value!;
                     setUserEdit({ ...userEdit, ...{ email } });
                   }}
                 />
@@ -133,9 +133,7 @@ const Profile: React.FC = (props: any) => {
                 <IonInput
                   type="password"
                   onIonChange={(e) => {
-                    const current_password = e.detail.value
-                      ? e.detail.value
-                      : "";
+                    const current_password = e.detail.value!;
                     setUserEdit({ ...userEdit, ...{ current_password } });
                   }}
                 />
@@ -144,7 +142,7 @@ const Profile: React.FC = (props: any) => {
                 <IonLabel position="floating">New Password</IonLabel>
                 <IonInput
                   onIonChange={(e) => {
-                    const new_password = e.detail.value ? e.detail.value : "";
+                    const new_password = e.detail.value!;
                     setUserEdit({ ...userEdit, ...{ new_password } });
                   }}
                 />
