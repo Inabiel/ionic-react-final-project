@@ -113,7 +113,7 @@ const Main: React.FC = (props: any) => {
               .map((data: any) => (
                 <IonList key={data.hash}>
                   <Link to={`/detail/${data.hash}`}>
-                    <IonItem>
+                    <IonItem lines="full">
                       <IonLabel slot="start">
                         <h2>{moment(data.created_at).format("MMM Do")}</h2>
                         <h2 className="pt-5">
