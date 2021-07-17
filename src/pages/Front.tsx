@@ -34,11 +34,11 @@ const Front: React.FC = () => {
               </h1>
             </IonCol>
           </IonRow>
-          <IonRow className="bg-purple-700 py-15 h-2/6 bottom-0 left-0 right-0 ion-align-items-center rounded-t-3xl w-full fixed bottom-0">
+          <IonRow className="bg-purple-700 py-20 h-2/6 bottom-0 left-0 right-0 ion-align-items-center rounded-t-3xl w-full fixed bottom-0">
             <IonCol size="12" className="ion-text-center">
               <Link to="/register">
                 <IonButton
-                  size="large"
+                  size="default"
                   color="danger"
                   className="font-extrabold text-2xl"
                 >
@@ -49,7 +49,7 @@ const Front: React.FC = () => {
             <IonCol size="12" className="ion-text-center">
               <Link to="/login">
                 <IonButton
-                  size="large"
+                  size="default"
                   color="danger"
                   className="font-extrabold text-2xl"
                 >
