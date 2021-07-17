@@ -5,6 +5,7 @@ http://ionicframework.com/docs/theming/ */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 :root {
   /** primary **/
   --ion-color-primary: #3880ff;
@@ -79,7 +80,7 @@ http://ionicframework.com/docs/theming/ */
   --ion-color-light-tint: #f5f6f9;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: darks) {
   /*
    * Dark Colors
    * -------------------------------------------
