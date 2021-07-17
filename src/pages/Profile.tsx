@@ -91,7 +91,7 @@ const Profile: React.FC = (props: any) => {
           </IonButtons>
         </IonToolbar>
       </IonHeader>
-      <IonContent fullscreen>
+      <IonContent fullscreen color="light">
         {isDataExists && (
           <>
             <IonItem

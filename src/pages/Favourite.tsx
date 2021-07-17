@@ -43,7 +43,7 @@ const Favourite: React.FC = (props: any) => {
           <IonTitle className="ion-text-center">Favourite</IonTitle>
         </IonToolbar>
       </IonHeader>
-      <IonContent fullscreen>
+      <IonContent fullscreen color="light">
         {isDataExists && (
           <>
             {favourite.length > 0 && (

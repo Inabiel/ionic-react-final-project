@@ -62,7 +62,7 @@ const Main: React.FC = (props: any) => {
           </IonTitle>
         </div>
       </IonHeader>
-      <IonContent fullscreen>
+      <IonContent fullscreen color="light">
         <IonSegment onIonChange={(e) => setLinkTab(e.detail.value!)}>
           <IonSegmentButton value="All">
             <IonLabel>All</IonLabel>

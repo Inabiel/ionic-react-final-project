@@ -26,7 +26,7 @@ const Login: React.FC = (props: any) => {
   const history = useHistory();
   return (
     <IonPage>
-      <IonContent fullscreen>
+      <IonContent fullscreen color="light">
         <IonGrid>
           <IonRow>
             <IonCol className="text-center">
@@ -35,8 +35,8 @@ const Login: React.FC = (props: any) => {
               </h1>
               <img
                 src="assets/Mobile-login.jpg"
-                width="350px"
-                height="350px"
+                width="300px"
+                height="300px"
                 className="mx-auto pt-14"
                 alt=""
               />

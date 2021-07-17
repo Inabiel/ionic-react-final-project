@@ -52,7 +52,7 @@ const Register: React.FC = () => {
 
   return (
     <IonPage>
-      <IonContent fullscreen>
+      <IonContent fullscreen color="light">
         <IonGrid>
           <IonRow>
             <IonCol className="text-center">
@@ -61,8 +61,8 @@ const Register: React.FC = () => {
               </h1>
               <img
                 src="assets/register-icon.jpg"
-                width="350px"
-                height="350px"
+                width="300px"
+                height="300px"
                 className="mx-auto"
                 alt=""
               />

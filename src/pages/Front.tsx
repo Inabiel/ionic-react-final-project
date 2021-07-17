@@ -18,14 +18,14 @@ import { Link } from "react-router-dom";
 const Front: React.FC = () => {
   return (
     <IonPage>
-      <IonContent fullscreen>
+      <IonContent fullscreen color="light">
         <IonGrid>
           <IonRow>
             <IonCol className="text-center">
               <img
                 src="assets/front-icon.jpg"
-                width="350px"
-                height="350px"
+                width="300px"
+                height="300px"
                 className="mx-auto pt-24"
                 alt=""
               />
@@ -34,7 +34,7 @@ const Front: React.FC = () => {
               </h1>
             </IonCol>
           </IonRow>
-          <IonRow className="bg-purple-700 py-20 h-2/6 bottom-0 left-0 right-0 ion-align-items-center rounded-t-3xl w-full fixed bottom-0">
+          <IonRow className="bg-purple-700 py-15 h-2/6 bottom-0 left-0 right-0 ion-align-items-center rounded-t-3xl w-full fixed bottom-0">
             <IonCol size="12" className="ion-text-center">
               <Link to="/register">
                 <IonButton

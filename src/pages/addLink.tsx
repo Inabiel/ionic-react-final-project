@@ -66,7 +66,7 @@ const AddLink: React.FC = (props: any) => {
           </IonButtons>
         </IonToolbar>
       </IonHeader>
-      <IonContent fullscreen>
+      <IonContent fullscreen color="light">
         <form className="ion-padding">
           <IonItem>
             <IonLabel position="floating">Original Link</IonLabel>
